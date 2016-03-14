@@ -1,0 +1,14 @@
+{
+  "name": "ext-hal-nrf51",
+  "version": "0.1.0",
+  "description": "Extended HAL for nRF51",
+  "keywords": [],
+  "author": "me@bearsh.org",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "targetDependencies": {
+    "nrf51822": {
+      "mbed-hal-nrf51822-mcu": "^2.0.0"
+    }
+  }
+}
