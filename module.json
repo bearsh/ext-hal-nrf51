@@ -1,6 +1,6 @@
 {
   "name": "ext-hal-nrf51",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extended HAL for nRF51",
   "keywords": [],
   "author": "me@bearsh.org",
