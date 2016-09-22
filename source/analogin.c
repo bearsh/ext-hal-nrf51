@@ -66,7 +66,7 @@ void analogin_config(analogin_t __unused *obj, uint8_t res, uint8_t inpsel, uint
 		enabled = 1;
 	}
 	NRF_ADC->CONFIG &= ~(ADC_CONFIG_RES_Msk | ADC_CONFIG_INPSEL_Msk | ADC_CONFIG_REFSEL_Msk | ADC_CONFIG_EXTREFSEL_Msk);
-	NRF_ADC->CONFIG |= (res<<ADC_CONFIG_REFSEL_Pos) | (inpsel<<ADC_CONFIG_INPSEL_Pos) |
+	NRF_ADC->CONFIG |= (res<<ADC_CONFIG_RES_Pos) | (inpsel<<ADC_CONFIG_INPSEL_Pos) |
 			(refsel<<ADC_CONFIG_REFSEL_Pos) | (extrefsel<<ADC_CONFIG_EXTREFSEL_Pos);
 	if (enabled) {
 		NRF_ADC->ENABLE = ADC_ENABLE_ENABLE_Enabled;
